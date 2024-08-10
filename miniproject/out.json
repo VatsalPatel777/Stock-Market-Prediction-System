@@ -1,0 +1,193 @@
+{
+    "meta": {
+        "found": 20438,
+        "returned": 3,
+        "limit": 3,
+        "page": 1
+    },
+    "data": [
+        {
+            "uuid": "96f64319-9256-4a01-be60-9e6125732cec",
+            "title": "Reality Check: Jewellery stocks: Festive demand boosts revenue",
+            "description": "Major jewellery companies, including Titan Company, Kalyan Jewellers India, and Thangamayil Jewellery, reported Q3-FY24 earnings with revenue growth due to festive demand and a rise in gold prices. Thangamayil\u2019s shares rose 6% with improved margins and doubled net profit, while Titan and Kalyan saw a 4% and 2% decline. The outlook for gold prices may impact jewellery demand, and investors are advised to wait given the expanded valuations.",
+            "keywords": "Jewellery companies, Titan Company, Kalyan Jewellers India, Thangamayil Jewellery, Q3-FY24 earnings, revenue growth, festive demand, gold prices, share price, margin improvement, net profit, profit-booking, stretched valuations, diamond product sales, gold price outlook, investor advice",
+            "snippet": "Major jewellery companies such as Titan Company (\u20b93,612.4), Kalyan Jewellers India (\u20b9347.9) and Thangamayil Jewellery (\u20b91,420.35) reported their Q3-FY24 e...",
+            "url": "https://www.thehindubusinessline.com/portfolio/stock-fundamental-analysis-india/reality-check-jewellery-stocks-festive-demand-boosts-revenue/article67807545.ece",
+            "image_url": "https://bl-i.thgim.com/public/incoming/3zk0bi/article67808108.ece/alternates/LANDSCAPE_1200/2024-01-31T071633Z_2015064452_RC2US5AP817Q_RTRMADP_3_KALYAN-JEWELLERS-RESULTS.JPG",
+            "language": "en",
+            "published_at": "2024-02-03T15:34:06.000000Z",
+            "source": "thehindubusinessline.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "^NSEI",
+                    "name": "Nifty 50",
+                    "exchange": null,
+                    "exchange_long": null,
+                    "country": "in",
+                    "type": "index",
+                    "industry": "N/A",
+                    "match_score": 16.749754,
+                    "sentiment_score": 0.296,
+                    "highlights": [
+                        {
+                            "highlight": "Over the past year, the jewellery stocks have given a stellar performance (refer table), comfortably beating the benchmark <em>Nifty</em> <em>50</em>. Consequently, the valuation of the stocks now stands stretched. The trailing price-earnings of Titan, Kalyan and Thangamayil stood at 99, 65 and 31 respectively.",
+                            "sentiment": 0.296,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "56d7ac96-1b7c-43a2-951c-c6d7de856fc4",
+            "title": "F&O Tracker: Data and chart show uncertainty",
+            "description": "Nifty 50 and Bank Nifty gained 2.3% and 2.5%, respectively, last week despite a bearish setup. F&O data presents a mixed outlook. For Nifty, short covering is indicated, but PCR shows a mixed picture. Support is at 21,500-21,700, and resistance at 22,000-22,200. Bank Nifty futures rose 2.1%, with short positions covering, but a bearish bias is suggested by the PCR. Key levels for Bank Nifty are 46,000 and 47,000. Overall, no clear trend is evident, advising traders to refrain from fresh positions.",
+            "keywords": "Nifty 50, Bank Nifty, Nifty trend, Bank Nifty trend, Nifty futures, Bank Nifty futures, Nifty options, Bank Nifty options, Nifty trading, Bank Nifty trading, Nifty forecas, Bank Nifty forecast, options trading, options strategy, index options, index derivatives, stock market, stock market India, FnO trading",
+            "snippet": "Nifty 50 (21,854) and Bank Nifty (45,971), despite a bearish chart set-up, appreciated last week. While the former gained 2.3 per cent, the latter went up 2.5 p...",
+            "url": "https://www.thehindubusinessline.com/portfolio/commodity-analysis/fo-tracker-data-and-chart-show-uncertainty/article67807616.ece",
+            "image_url": "https://bl-i.thgim.com/public/incoming/6v9vlj/article67807959.ece/alternates/LANDSCAPE_1200/PO04_candle%20balance.jpg",
+            "language": "en",
+            "published_at": "2024-02-03T14:50:40.000000Z",
+            "source": "thehindubusinessline.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "^NSEI",
+                    "name": "Nifty 50",
+                    "exchange": null,
+                    "exchange_long": null,
+                    "country": "in",
+                    "type": "index",
+                    "industry": "N/A",
+                    "match_score": 24.742477,
+                    "sentiment_score": 0.75665,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Nifty</em> <em>50</em> (21,854) and Bank Nifty (45,971), despite a bearish chart set-up, appreciated last week. While the former gained 2.3 per cent, the latter went up 2.5 per cent. The futures and options (F&O) data look mixed for both indices. Below is an analysis of derivatives data.",
+                            "sentiment": 0.8225,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "<em>Nifty</em> <em>50</em>\n\nThe February Nifty futures rallied 2.1 per cent as it closed at 21,951 on Friday. As the contract rallied, the cumulative Open Interest (OI) dropped \u2013 it went down to 132.6 lakh contracts on February 2 versus 180.8 lakh contracts on January 25.\n\nA price rally accompanied by a decline in OI indicates short covering.",
+                            "sentiment": 0.6908,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "55695375-a3b3-4afb-96a2-ab2cd1477896",
+            "title": "Index Outlook: Sensex, Nifty 50: Sideways consolidation possible",
+            "description": "Indian indices unexpectedly rebounded last week, defying predictions, with Nifty 50, Nifty Bank, and Sensex gaining. Caution is advised due to doubts about sustainability. Notable sector performances include BSE Oil & Gas and BSE PSU. Foreign Portfolio Investors shifted to net buyers. Technical analysis outlines support and resistance levels, and Dow Jones shows a positive trend. Market calls for a cautious approach, considering crucial support zones and external influences.",
+            "keywords": "Nifty today, Nifty outlook, Nifty prediction, Nifty 50 outlook, Nifty outlook for next week, Nifty outlook for the week, Nifty target for next week, Nifty Bank outlook, Nifty Bank prediction, Bank Nifty outlook, Nifty Bank today, Bank Nifty today, Bank Nifty outlook for the week, Nifty Bank target for next week, Dow Jones outlook, Dow Jones prediction, Dow Jones outlook this week, Dow Jones outlook next week, Dow Jones target for next week, Sensex outlook, Sensex prediction, Nifty support, Sensex support, Sensex outlook for the week, Sensex target for next week, FPI flows, Foreign money inflows, Foreign Portfolio Investors, Fed rate hike, Fed meeting, Federal Reserve meeting, Federal Reserve interest rate",
+            "snippet": "Contrary to our expectation to extend the fall, the Indian benchmark indices witnessed a strong bounce back last week. Nifty 50 and the Nifty Bank index had clo...",
+            "url": "https://www.thehindubusinessline.com/portfolio/technical-analysis/index-outlook-sensex-nifty-50-sideways-consolidation-possible/article67807356.ece",
+            "image_url": "https://bl-i.thgim.com/public/incoming/8m2ctd/article67807783.ece/alternates/LANDSCAPE_1200/PO04_bear%20and%20bull.jpg",
+            "language": "en",
+            "published_at": "2024-02-03T13:54:40.000000Z",
+            "source": "thehindubusinessline.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "^DJI",
+                    "name": "Dow Jones Industrial Average",
+                    "exchange": null,
+                    "exchange_long": null,
+                    "country": "us",
+                    "type": "index",
+                    "industry": "N/A",
+                    "match_score": 23.070961,
+                    "sentiment_score": 0.9001,
+                    "highlights": [
+                        {
+                            "highlight": "The <em>Dow</em> <em>Jones</em> <em>Industrial</em> <em>Average</em> has closed on a strong note at 38,654.42, up 1.43 per cent for the week.\n\nChart Source: MetaStock\n\nOutlook: The outlook is bullish. Immediate support is around 38,500. The price action on the daily chart last week indicates a strong support formation around 38,100.",
+                            "sentiment": 0.9001,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                },
+                {
+                    "symbol": "^NSEBANK",
+                    "name": "Nifty Bank",
+                    "exchange": null,
+                    "exchange_long": null,
+                    "country": "in",
+                    "type": "index",
+                    "industry": "N/A",
+                    "match_score": 34.37461,
+                    "sentiment_score": 0.21385,
+                    "highlights": [
+                        {
+                            "highlight": "Nifty 50 and the <em>Nifty</em> <em>Bank</em> index had closed over 2 per cent. Sensex was up 1.96 per cent. However, on Friday, the benchmark indices had come down sharply from their intraday highs. This leaves a doubt on the strength of the bounce witnessed last week. It also keeps the indices vulnerable for a fall again.",
+                            "sentiment": 0.3612,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "<em>Nifty</em> <em>Bank</em> (45,970.95)\n\nContrary to our expectation, the <em>Nifty</em> <em>Bank</em> index rose breaking above the resistance at 45,350 last week. The index touched a high of 46,892.35 and had come-off sharply from there. It has closed the week at 45,970.95, up 2.46 per cent.",
+                            "sentiment": 0,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "<em>Nifty</em> <em>Bank</em> index has to break this resistance to become bullish convincingly. Only in that case, the index can rise towards 48,000. A further break above 48,000 can take the <em>Nifty</em> <em>Bank</em> index up to 49,000. This is the bullish case.\n\nBut if the index fails to rise past 47,100, it can remain vulnerable for a fall.",
+                            "sentiment": -0.2732,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "Break below it can drag the <em>Nifty</em> <em>Bank</em> index down to 44,800 first and then 44,200-43,800 eventually thereafter.\n\nChart Source: MetaStock\n\nMedium-term view: The big picture is bullish. As mentioned last week, 43,600-43,400 is a strong support zone that can limit the downside.",
+                            "sentiment": 0.4767,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "As long as the <em>Nifty</em> <em>Bank</em> index stays above 43,600-43,400, the outlook is bullish to see a rise to 46,000-46,300 initially and then 49,500-50,000 eventually in the coming months.\n\nSensex (72,085.63)\n\nSensex has risen breaking above its 71,000-71,500 resistance last week. We had expected this resistance to hold and the index to fall.",
+                            "sentiment": 0,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "Possible Range Nifty 50: 21,180- 22,150 Sensex: 70,000 & 73,400 <em>Nifty</em> <em>Bank</em>: 43,800-47,100\n\nDow Jones (38,654.42)\n\nThe rise to 38,400 has happened in line with our expectation. The Dow Jones Industrial Average has closed on a strong note at 38,654.42, up 1.43 per cent for the week.\n\nChart Source: MetaStock\n\nOutlook: The outlook is bullish.",
+                            "sentiment": 0.7184,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                },
+                {
+                    "symbol": "^NSEI",
+                    "name": "Nifty 50",
+                    "exchange": null,
+                    "exchange_long": null,
+                    "country": "in",
+                    "type": "index",
+                    "industry": "N/A",
+                    "match_score": 92.81746,
+                    "sentiment_score": 0.490075,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Nifty</em> <em>50</em> and the Nifty Bank index had closed over 2 per cent. Sensex was up 1.96 per cent. However, on Friday, the benchmark indices had come down sharply from their intraday highs. This leaves a doubt on the strength of the bounce witnessed last week. It also keeps the indices vulnerable for a fall again.",
+                            "sentiment": 0.3612,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "<em>Nifty</em> <em>50</em> (21,853.80)\n\nNifty began the week on a positive note by rising above the resistance at 21,600 on Monday itself. We had expected the Nifty to remain below 21,600 and fall last week. After staying stable for the next few days, the index surged to a new high of 22,126.80 on Friday before coming off from there.",
+                            "sentiment": 0.8807,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "Possible Range <em>Nifty</em> <em>50</em>: 21,180- 22,150 Sensex: 70,000 & 73,400 Nifty Bank: 43,800-47,100\n\nDow Jones (38,654.42)\n\nThe rise to 38,400 has happened in line with our expectation. The Dow Jones Industrial Average has closed on a strong note at 38,654.42, up 1.43 per cent for the week.\n\nChart Source: MetaStock\n\nOutlook: The outlook is bullish.",
+                            "sentiment": 0.7184,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "Index Outlook: Sensex, <em>Nifty</em> <em>50</em>: Sideways consolidation possible",
+                            "sentiment": 0,
+                            "highlighted_in": "title"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        }
+    ]
+}

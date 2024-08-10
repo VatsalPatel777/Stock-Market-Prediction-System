@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- <link
+      rel="stylesheet"
+      href="{% static 'stockmarketpred/css/contact.css' %}"
+    /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #eeeeee;
+        background-color: #222831;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .navbar {
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+        width: 100%;
+        height: 4rem;
+        /* border-radius: 1rem; */
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.75);
+        animation: navbarFadeIn 0.7s ease-out;
+        background-color: #393e46;
+      }
+
+      @keyframes navbarFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      #logo {
+        height: 100%;
+        width: 6%;
+        align-items: center;
+        justify-content: center;
+        float: left;
+      }
+
+      #element {
+        float: right;
+        margin: 0;
+        padding: 0;
+      }
+      #a5 {
+        background-color: #2424e5fa;
+      }
+      #logo img {
+        height: 90%;
+        width: 110%;
+        margin: 0% 0% 0% 10%;
+        filter: invert(1);
+      }
+
+      #logo img:hover {
+        filter: invert(0);
+        cursor: pointer;
+        animation: linkPulse 0.5s ease-in-out;
+      }
+
+      .navbar ul strong {
+        overflow: auto;
+        float: right;
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar li {
+        /* float:right; */
+        list-style: none;
+        margin: 1.4rem 1.3rem;
+      }
+      .navbar li a {
+        padding: 8px 13px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.35rem;
+        margin: 0px-13px;
+        border-radius: 7px;
+        transition: color 0.5s, background-color 0.5s;
+      }
+      .navbar li a:hover {
+        background-color: #222831;
+        border-radius: 7px;
+        animation: linkPulse 0.5s ease-in-out;
+      }
+
+      @keyframes linkPulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /*-------------------------------------------------------------------------------------------*/
+
+      .container1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.75);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3% 3%;
+        justify-content: center;
+        position: relative;
+        /* background-image: url("img1.jpg"); */
+      }
+      .container1::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 3% 3%;
+        z-index: -1;
+        border-radius: 1rem;
+        opacity: 0.55;
+        background: url("{% static 'stockmarketpred/images/contact.jpg' %}") no-repeat
+          center center/cover;
+      }
+      form {
+        width: 50%;
+      }
+      .inpt {
+        margin: 2% 0%;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inpt input,
+      .inpt textarea {
+        background-color: #29303a;
+        border: 0.5px solid black;
+        color: white;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.75);
+        transition: background-color 0.3s;
+        animation: inputFadeIn 0.8s ease-out;
+      }
+
+      .inpt input {
+        height: 4rem;
+        margin-bottom: 1%;
+      }
+      .inpt label {
+        font-size: 1.7rem;
+        margin-bottom: 1%;
+        opacity: 0.85;
+      }
+
+      .inpt input::placeholder {
+        font-size: 1.2rem;
+        color: white;
+        opacity: 0.7;
+      }
+
+      #btn {
+        align-items: center;
+      }
+      #submit {
+        width: 25%;
+      }
+
+      #submit:hover {
+        cursor: pointer;
+        background-color: #575f6b;
+      }
+
+      @keyframes inputFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /*------------------------------------------------------------------------------------------*/
+
+      .footer {
+        position: relative;
+        bottom: 0;
+      }
+
+      /*-------------------------------------------------------------------------------------------*/
+
+      /*General*/
+
+      .container1,
+      .footer {
+        transition: transform 0.3s;
+        animation: boxRise 1s ease-out;
+      }
+
+      @keyframes boxRise {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="logo">
+        <img src="{% static 'stockmarketpred/images/logo2.png' %}" alt />
+      </div>
+
+      <ul id="element">
+        <strong>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'predictions' %}">Predections</a></li>
+          <li><a href="{% url 'sentiment' %}">Market Sentiment</a></li>
+          <li><a href="{% url 'contact' %}">Contact Us</a></li>
+          <li><a href="{% url 'signout' %}" id="a5">Logout</a></li>
+        </strong>
+      </ul>
+    </nav>
+
+    <div class="container1">
+      <h1 style="text-align: center; font-size: 3rem; margin: 3% 0% 2% 0%">
+        Contact Us
+      </h1>
+      <form action="{% url 'contact' %}">
+        {% csrf_token %}
+        <div class="inpt">
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="inpt">
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="inpt">
+          <label for="phone">Phone Number: </label>
+          <input
+            type="phone"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="inpt">
+          <label for="message">Message: </label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="inpt" id="btn">
+          <input type="submit" id="submit" placeholder="submit" />
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+      <hr style="background-color: black; border: none; height: 1.5px" />
+      <h3
+        style="
+          padding-left: 55px;
+          font-size: 100;
+          margin-top: 2% 0% 2% 1%;
+          opacity: 0.75;
+        "
+      >
+        Copyright &copy; All rights reserved!
+      </h3>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+twitter_api_key = "qOZMoJKsCaBEdUCDgca6d1wWM"
+twitter_api_secret = "CZqLkWkROYddPAhNSG6PoSFiYVNBe3uZdudd0ix3Kf0JXwFAx6"
+
+twitter_bearer_token = "AAAAAAAAAAAAAAAAAAAAAIMrrwEAAAAAlO4%2BIywPN2OvHrq85Ih%2BFZLKlkY%3DaeLHnu3iS8xWsQtUcUVbOJIrXDJyJwnwjInCsb8Y3PIKUvyiqa"
+
+twitter_access_token = "1620687639929303042-DVRcNJgVb1wNfsmcHfGfKHIeH1vRw7"
+twitter_access_secret = "h0AzqBLNy6SzFF5GvSU4hkw2RzoytQNHJc6CKuyVNakBU"
+
+news_api_key = "58685766c7d847fb99aa81683ebb1c21"
+
+alpha_vantage_api_key = "K7GNZK0V84NTPHTB"
+
+finnhub_api_key = "cmen1m9r01qqff2lk3egcmen1m9r01qqff2lk3f0"
+
+marketaux_api_token = "4esoPKCduuXySGD3g6sLYKyNd0ZRSVlKXkT1Ne44"

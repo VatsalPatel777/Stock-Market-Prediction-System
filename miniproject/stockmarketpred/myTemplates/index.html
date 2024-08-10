@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+            html,
+            body {
+                font-size: 62.5%;
+                overflow-x: hidden;
+                background-color: #eeeeee;
+                font-family: "Oswald";
+                padding: 0;
+                margin: 0;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: transparent;
+            }
+
+            li {
+                float: right;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li .nav_text {
+                font-size: 3em;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li .nav_text:hover:not(.active) {
+                color: #eeeeee;
+                background-color: black;
+            }
+
+            .active {
+                background-color: #04aa6d;
+            }
+
+            li .nav_img {
+                padding: 14px 16px;
+                height: 7em;
+                width: auto;
+                position: left;
+            }
+
+            .row {
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+
+            .graph_1 {
+                float: left;
+                width: 33.33%;
+                height: auto;
+                padding-right: 20px;
+            }
+
+            .graph_2 {
+                float: right;
+                width: 33.33%;
+                height: auto;
+                padding-right: 20px;
+            }
+
+            .graph_3 {
+                float: right;
+                width: 33.33%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topnav" class="topnav">
+            <ul>
+                <li><a class="nav_text" href="#">Stock Info</a></li>
+                <li><a class="nav_text" href="#">Prediction</a></li>
+                <li><a class="nav_text" href="#">Sentiment</a></li>
+                <li><a class="nav_text" href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="graph_1">{{fig1}}</div>
+            <div class="graph_2">{{fig2}}</div>
+            <div class="graph_3">{{fig3}}</div>
+        </div>
+        <!-- <h1 style="font-size: 3em;">Candlesticks</h1>
+        <div class="candlesticks">{{fig4}}</div> -->
+    </body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiments</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="market.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #eeeeee;
+        background-color: #222831;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .navbar {
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+        width: 100%;
+        height: 4rem;
+        /* border-radius: 1rem; */
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.75);
+        animation: navbarFadeIn 0.7s ease-out;
+        background-color: #393e46;
+      }
+
+      @keyframes navbarFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      #logo {
+        height: 100%;
+        width: 6%;
+        align-items: center;
+        justify-content: center;
+        float: left;
+      }
+
+      #element {
+        float: right;
+        margin: 0;
+        padding: 0;
+      }
+      #a5 {
+        background-color: #2424e5fa;
+      }
+      #logo img {
+        height: 90%;
+        width: 110%;
+        margin: 0% 0% 0% 10%;
+        filter: invert(1);
+      }
+
+      #logo img:hover {
+        filter: invert(0);
+        cursor: pointer;
+        animation: linkPulse 0.5s ease-in-out;
+      }
+
+      .navbar ul strong {
+        overflow: auto;
+        float: right;
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar li {
+        /* float:right; */
+        list-style: none;
+        margin: 1.4rem 1.3rem;
+      }
+      .navbar li a {
+        padding: 8px 13px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.35rem;
+        margin: 0px-13px;
+        border-radius: 7px;
+        transition: color 0.5s, background-color 0.5s;
+      }
+      .navbar li a:hover {
+        background-color: #222831;
+        border-radius: 7px;
+        animation: linkPulse 0.5s ease-in-out;
+      }
+
+      @keyframes linkPulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /*-------------------------------------------------------------------------------------------*/
+
+      .container1 {
+        align-items: center;
+        height: 5rem;
+        margin: 2% 3%;
+        display: flex;
+        box-sizing: border-box;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75); */
+        /* flex-direction: column; */
+      }
+      .dropdown {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 60%;
+        margin: 0 40%;
+      }
+
+      #li2 {
+        height: 100%;
+        width: 300%;
+        display: inline-block;
+        font-size: 1.8rem;
+        border-bottom: 0.01px solid black;
+        /* border-radius: 0.3rem; */
+        margin: 0px -100%;
+        padding: 2.5% 0 0 5%;
+        background-color: #222831;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.55);
+      }
+
+      .dropdown li {
+        /* list-style: none; */
+        background-color: #222831;
+        /* border:0.3px solid #101216; */
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75); */
+        border-bottom: 0.01px solid black;
+        color: #eeeeee;
+      }
+
+      .dd_menu li:hover {
+        background-color: #101216;
+        color: #eeeeee;
+        cursor: pointer;
+      }
+
+      .dd_menu {
+        display: none;
+        height: 25%;
+        overflow-y: auto;
+      }
+
+      #li2:hover .dd_menu {
+        display: block;
+        position: absolute;
+        width: 55.78%;
+        height: 29%;
+        overflow-y: auto;
+        margin: 0.485% 0% 0% -0.98%;
+        /* box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75); */
+      }
+
+      .dd_menu ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .dd_menu ul li {
+        display: block;
+        padding: 0.7rem 1.2rem;
+        font-size: 1.6rem;
+        width: 100%;
+      }
+      .fa {
+        float: right;
+        margin: 0.5% 1.5% 0 0;
+      }
+
+      /*-------------------------------------------------------------------------------------------*/
+      .container2 {
+        /* border: 2px solid red; */
+        height: auto;
+        width: 94%;
+        margin: 4% 3%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.75);
+        border-radius: 1rem;
+      }
+
+      /*-------------------------------------------------------------------------------------------*/
+
+      .container1,
+      .container2,
+      .footer {
+        transition: transform 0.3s;
+        animation: boxRise 1s ease-out;
+      }
+
+      @keyframes boxRise {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container2:hover {
+        transform: scale(1.02);
+      }
+
+      .sentiment,
+      .header {
+        height: auto;
+        width: 94%;
+        margin: 4% 3%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    {{static_load}}
+    <nav class="navbar">
+      <div id="logo">
+        <img src="{{img_url}}" alt />
+      </div>
+
+      <ul id="element">
+        <strong>
+          <li><a href="{{ homeurl }}">Home</a></li>
+          <li><a href="{{ predectionurl }}">Predections</a></li>
+          <li><a href="{{ marketurl }}">Market Sentiment</a></li>
+          <li><a href="{{ contacturl }}">Contact Us</a></li>
+          <li><a href="{{ indexurl }}" id="a5">Logout</a></li>
+        </strong>
+      </ul>
+    </nav>
+
+    <div class="header">
+      <h1
+        style="
+          font-size: 100;
+          margin-top: 2%;
+          margin-right: 3%;
+          text-align: left;
+        "
+      >
+        Overall Market Sentiment
+      </h1>
+    </div>
+
+    <div class="container2">{{fig}}</div>
+
+    <div class="sentiment">
+      {{text1}}<br />
+      <h2>{{heading1}}</h2>
+      {{text2}}
+    </div>
+
+    <div class="footer">
+      <hr style="background-color: black; border: none; height: 1.5px" />
+      <h3
+        style="
+          padding-left: 55px;
+          font-size: 100;
+          margin-top: 2% 0% 2% 1%;
+          opacity: 0.75;
+          text-align: left;
+        "
+      >
+        Copyright &copy; All rights reserved!
+      </h3>
+    </div>
+  </body>
+</html>

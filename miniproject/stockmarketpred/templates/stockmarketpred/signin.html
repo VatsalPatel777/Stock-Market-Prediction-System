@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #eeeeee;
+        background-color: #222831;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+      }
+      /*----------------------------------------------------------------------------------------*/
+
+      #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #logo img {
+        height: 8rem;
+        width: 20rem;
+        filter: invert(1);
+      }
+
+      #logo img:hover {
+        filter: invert(0);
+        cursor: pointer;
+        animation: linkPulse 0.5s ease-in-out;
+      }
+
+      @keyframes linkPulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /*----------------------------------------------------------------------------------------*/
+      .container1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.75);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3% 22%;
+        justify-content: center;
+        position: relative;
+        /* background-image: url("img1.jpg"); */
+      }
+      .container1::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 3% 3%;
+        z-index: -1;
+        border-radius: 1rem;
+        opacity: 0.55;
+        background: url("{% static 'stockmarketpred/images/contact.jpg' %}") no-repeat center center/cover;
+      }
+      form {
+        width: 60%;
+        margin-bottom: 3%;
+      }
+      .inpt {
+        margin: 2% 0%;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inpt input,
+      .inpt textarea {
+        background-color: #29303a;
+        border: 0.5px solid black;
+        color: white;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        border: none;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.75);
+        transition: background-color 0.3s;
+        animation: inputFadeIn 0.8s ease-out;
+      }
+
+      .inpt input {
+        height: 4rem;
+        margin-bottom: 1%;
+      }
+      .inpt label {
+        font-size: 1.7rem;
+        margin-bottom: 1%;
+        opacity: 0.85;
+      }
+
+      .inpt input::placeholder {
+        font-size: 1.2rem;
+        color: white;
+        opacity: 0.7;
+      }
+
+      #btn {
+        align-items: center;
+      }
+      #submit {
+        width: 25%;
+      }
+
+      #submit:hover {
+        cursor: pointer;
+        background-color: #575f6b;
+      }
+
+      p a {
+        /* text-decoration: none; */
+        color: beige;
+      }
+      @keyframes inputFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'stockmarketpred/images/logo2.png' %}" alt />
+      </a>
+    </div>
+    <div class="container1">
+      <h1 style="text-align: center; font-size: 3rem; margin: 3% 0% 2% 0%">
+        Login
+      </h1>
+      <form method="post" action="{% url 'signin' %}">
+        {% csrf_token %}
+        <div class="inpt">
+          <label for="email">Email ID: </label>
+          <input
+            type="email"
+            name="username"
+            id="username"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="inpt">
+          <label for="message">Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter  a password"
+          />
+        </div>
+        <div class="inpt" id="btn">
+          <input type="submit" id="submit" value="Login" />
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" />
+          Remember me
+        </label>
+        {% if error_message %}
+        <p style="color: red"><strong>{{error_message}}</strong></p>
+        {% endif %}
+        <p>Don't have an account? <a href="{%url 'signup'%}">Register!</a></p>
+      </form>
+    </div>
+  </body>
+</html>
