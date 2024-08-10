@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  color: #EEEEEE;
+  background-color: #292e35;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+/*----------------------------------------------------------------------------------------*/
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    height: 5rem;
+    width: 12rem;
+    filter: invert(1);
+}
+
+#logo img:hover {
+    filter: invert(0);
+    cursor: pointer;
+    animation: linkPulse 0.5s ease-in-out;
+}
+
+@keyframes linkPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+/*----------------------------------------------------------------------------------------*/
+  .container1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+    /* border-radius: 1rem; */
+    display: flex;
+    width: 35%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% auto;
+    justify-content: center;
+    position: relative;
+    /* background-image: url("img1.jpg"); */
+    background-color: #141a22;
+}
+
+form{
+    width: 60%;
+    margin-bottom: 3%;
+}
+.inpt{
+    margin: 2.5% 0%;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inpt input,.inpt textarea{
+    background-color: #29303a;
+    border: 0.5px solid black;
+    color: white;
+    width: 100%;
+    padding: 0.5rem;
+    /* border-radius: 9px; */
+    border: none;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75); 
+    transition: background-color 0.3s;
+    animation: inputFadeIn 0.8s ease-out;
+}
+
+.inpt input{
+    height: 2.5rem;
+    margin-bottom: 3%;
+}
+.inpt label{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+    opacity: 0.85;
+}
+
+.inpt input::placeholder{
+    font-size: 0.8rem;
+    color: white;
+    opacity:  0.7;
+}
+
+#btn{
+    align-items: center;
+}
+#submit{
+    width: 25%;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #575f6b; 
+}
+
+p a{
+    /* text-decoration: none; */
+    color: beige;
+}
+@keyframes inputFadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css" />
+    </head>
+    <body>
+      <script src="https://kit.fontawesome.com/0b9ba245eb.js" crossorigin="anonymous"></script>
+
+      <nav class="navbar">
+        <div id="logo">
+            <img src="logo2.png" alt>
+        </div>
+       
+        <ul id="element">
+            <strong> 
+              <li><a href="home.html">Home</a></li>
+              <li><a href="market.html">Market Sentiment</a></li>
+              <li><a href="predection.html">Predections</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="index.html" id="a5">Logout</a></li>
+             </strong>
+         </ul>
+    </nav>
+
+        <h1 style=" font-size: 100; margin-top: 2%; margin-right: 3%; text-align: right;">Markets at a glance</h1>
+
+        <div class="container1">
+            <div class="box" id="box1">
+                <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                async
+              >
+                {
+                "symbol": "BSE:SENSEX",
+                "width": "100%",
+                "height": "180",
+                "locale": "en",
+                "dateRange": "12M",
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "autosize": false,
+                "largeChartUrl": ""
+                 }
+              </script>
+            </div>
+            <div class="box" id="box2">
+                <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                async>
+                {
+                "symbol": "BSE:BANK",
+                "width": "100%",
+                "height": "180",
+                "locale": "IN",
+                "dateRange": "3M",
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "autosize": false,
+                "largeChartUrl": ""
+                 }
+              </script>
+            </div>
+            <div class="box" id="box3">
+                <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                async
+              >
+                {
+                "symbol": "BSE:LRGCAP",
+                "width": "100%",
+                "height": "180",
+                "locale": "en",
+                "dateRange": "12M",
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "autosize": false,
+                "largeChartUrl": ""
+                 }
+              </script>
+            </div>
+            <div class="box" id="box4">
+                <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+          async
+        >
+          {
+          "symbol": "BSE:MIDCAP",
+          "width": "100%",
+          "height": "180",
+          "locale": "en",
+          "dateRange": "12M",
+          "colorTheme": "dark",
+          "isTransparent": false,
+          "autosize": false,
+          "largeChartUrl": ""
+           }
+        </script>
+            </div>
+            <div class="box" id="box5">
+
+             <!-- TradingView Widget BEGIN -->
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                "symbol": "BSE:NIFTYBEES",
+                "width": "100%",
+                "height": "180",
+                "locale": "en",
+                "dateRange": "12M",
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "autosize": false,
+                "largeChartUrl": ""
+              }
+                </script>
+              </div>
+        </div>
+
+        <div class="container2">
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                {
+                "exchanges": [
+                  "BSE"
+                ],
+                "dataSource": "SENSEX",
+                "grouping": "sector",
+                "blockSize": "market_cap_basic",
+                "blockColor": "change",
+                "locale": "en",
+                "symbolUrl": "",
+                "colorTheme": "dark",
+                "hasTopBar": false,
+                "isDataSetEnabled": false,
+                "isZoomEnabled": true,
+                "hasSymbolTooltip": true,
+                "width": "100%",
+                "height": "100%"
+              }
+                </script>
+        </div>
+
+        <div class="container3">
+          <div class="dropdown">
+            <li id="li1">Select<i class="fa fa-caret-down"></i>
+            <div class="dd_menu">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+              </ul>
+            </div>
+          </li>
+          </div>
+        </div>
+
+        <div class="container4">
+            <div>
+              <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+          async
+        >
+            {
+            "symbol": "BSE:RELIANCE",
+            "width": "100%",
+            "locale": "in",
+            "colorTheme": "dark",
+            "isTransparent": false
+          }
+        </script>
+            </div>
+            <div>
+              <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+          async
+        >
+            {
+            "width": "100%",
+            "height": "470",
+            "symbol": "BSE:RELIANCE",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "in",
+            "enable_publishing": false,
+            "allow_symbol_change": false,
+            "support_host": "https://www.tradingview.com"
+          }
+        </script>
+            </div>
+        </div>
+
+        <div class="container5">
+            <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js"
+          async
+        >
+            {
+            "width": "100%",
+            "height": "100%",
+            "isTransparent": false,
+            "colorTheme": "dark",
+            "symbol": "BSE:RELIANCE",
+            "locale": "in"
+          }
+        </script>
+        </div>
+        <div class="container6">
+            <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js"
+          async
+        >
+            {
+            "isTransparent": false,
+            "largeChartUrl": "",
+            "displayMode": "regular",
+            "width": "100%",
+            "height": "100%",
+            "colorTheme": "dark",
+            "symbol": "BSE:RELIANCE",
+            "locale": "in"
+          }
+        </script>
+        </div>
+
+        <div class="footer">
+            <hr style="background-color: black; border: none; height: 1.5px;">
+            <h3
+                style="padding-left: 35px; font-size: 1rem; margin-top: 2% 0% 2% 1%; color: #EEEEEE; opacity: 0.75;">
+                Copyright &copy; All rights reserved! </h3>
+        </div>
+    </body>
+</html>

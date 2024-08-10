@@ -1,0 +1,67 @@
+<div class="dropdown">
+            <li id="li1">dropdown
+            <div class="dd_menu">
+              <ul>
+                <li>team-7</li>
+                <li>team-7</li>
+                <li>team-7</li>
+                <li>team-7</li>
+              </ul>
+            </div>
+          </li>
+          </div>
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+.dropdown{
+    align-items: center;
+    justify-content: center; 
+    width: 100%;  
+    margin:0 40%;  
+}
+
+#li1{
+    height: 3.5%;
+    width: 269%;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0px -70%;
+    background-color: black;
+}
+
+.dropdown li{
+    list-style: none;
+    background-color: black;
+    color: #EEEEEE;
+}
+
+.dd_menu li:hover{
+    background-color: rgb(232, 7, 7);
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.dd_menu{
+    display: none;
+}
+
+#li1:hover .dd_menu{
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin:auto;
+}
+
+.dd_menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.dd_menu ul li{
+    display: block;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.7rem;
+    width: 100%;
+}
